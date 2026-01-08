@@ -30,29 +30,6 @@ The simulator performs the following operations on input text:
 - Educational demonstrations for compiler design courses
 - Quick text normalization and cleaning
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-- A modern web browser (Chrome, Firefox, Safari, or Edge)
-- No additional dependencies or installations required
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/lex-code-simulator.git
-```
-
-2. Navigate to the project directory:
-```bash
-cd lex-code-simulator
-```
-
-3. Open `index.html` in your web browser
-
-That's it! The application runs entirely in the browser.
-
 ## 💻 Usage
 
 1. **Input Code**: Enter or paste your source code in the input textarea
