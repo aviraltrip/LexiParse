@@ -26,11 +26,13 @@
                     <h3>Processing Operations</h3>
                 </div>
                 <ul>
-                    <li>Remove single-line comments <code>//...</code></li>
+                    <li>Remove single-line comments <code>// ...</code></li>
                     <li>Remove multi-line comments <code>/* ... */</code></li>
-                    <li>Strip all whitespace characters</li>
-                    <li>Convert uppercase to lowercase</li>
-                    <li>Preserve all other characters</li>
+                    <li>Remove all whitespace characters</li>
+                    <li>Convert uppercase letters to lowercase</li>
+                    <li>Replace <code>printf</code> with <code>write</code></li>
+                    <li>Replace <code>scanf</code> with <code>read</code></li>
+                    <li>Convert remaining characters to ASCII values</li>
                 </ul>
             </div>
 
@@ -51,8 +53,11 @@ int Main() {
     /* Multi-line
        comment */
     printf('Hello WORLD');
+    scanf('%d', &x);
 }"></textarea>
-                    <div class="char-count">Characters: <span id="inputCount">0</span></div>
+                    <div class="char-count">
+                        Characters: <span id="inputCount">0</span>
+                    </div>
                 </div>
 
                 <div class="button-container">
@@ -80,7 +85,9 @@ int Main() {
                         Processed Output
                     </label>
                     <textarea id="output" readonly placeholder="Processed output will appear here..."></textarea>
-                    <div class="char-count">Characters: <span id="outputCount">0</span></div>
+                    <div class="char-count">
+                        Characters: <span id="outputCount">0</span>
+                    </div>
                 </div>
             </div>
         </div>
