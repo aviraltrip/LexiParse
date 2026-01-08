@@ -1,18 +1,24 @@
 function processText() {
     let input = document.getElementById('input').value;
-    
-    // single-line comments
     input = input.replace(/\/\/.*/g, '');
-    
-    // multi-line comments
     input = input.replace(/\/\*[\s\S]*?\*\//g, '');
-    
-    // all whitespace (spaces, tabs, newlines)
     input = input.replace(/[\s\n\t]+/g, '');
-    
-    // uppercase to lowercase
-    input = input.replace(/[A-Z]/g, match => match.toLowerCase());
-    
+    input = input.replace(/[A-Z]/g, match => match.toLowerCase());    
+    document.getElementById('output').value = input;
+    updateCharCount();
+}
+
+function replaceWithAscii() {
+    let input = document.getElementById('input').value;
+    input = input.split('').map(ch => ch.charCodeAt(0)).join(' ');
+    document.getElementById('output').value = input;
+    updateCharCount();
+}
+
+function replaceFunctions() {
+    let input = document.getElementById('input').value;
+    input = input.replace(/printf/g, 'write');
+    input = input.replace(/scanf/g, 'read');
     document.getElementById('output').value = input;
     updateCharCount();
 }
