@@ -2,12 +2,6 @@
 
 A web-based text processing and lexical analysis tool that simulates basic lexical analyzer operations for source code preprocessing.
 
-![Lex Code Simulator](https://img.shields.io/badge/Course-Compiler%20Design-blue)
-![Status](https://img.shields.io/badge/Status-Active-success)
-![HTML](https://img.shields.io/badge/HTML-5-orange)
-![CSS](https://img.shields.io/badge/CSS-3-blue)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
-
 ## 📋 Overview
 
 The Lex Code Simulator is an educational tool designed to demonstrate fundamental lexical analysis operations commonly performed by compilers and interpreters. It provides a clean, intuitive interface for processing source code through various text transformation steps, culminating in ASCII representation.
@@ -58,16 +52,6 @@ int Main() {
 105 110 116 109 97 105 110 40 41 123 write 40 34 104 101 108 108 111 119 111 114 108 100 34 41 59 read 40 34 37 100 34 44 38 110 117 109 41 59 125
 ```
 
-## 🏗️ Project Structure
-```
-lex-code-simulator/
-│
-├── index.html          # Main HTML structure
-├── styles.css          # Styling and layout
-├── script.js           # Processing logic
-└── README.md           # Documentation
-```
-
 ## 🛠️ Technologies Used
 
 - **HTML5** - Structure and semantic content
@@ -91,16 +75,3 @@ Convert Characters to ASCII
     ↓
 Output (Space-separated ASCII values)
 ```
-
-## ⌨️ Keyboard Shortcuts
-
-- **Ctrl + Enter** - Process text
-- Standard text editing shortcuts work in both textareas
-
-## 🎨 UI Features
-
-- Responsive design
-- Real-time character counting
-- Clean, modern interface with gradient backgrounds
-- Visual feedback on button interactions
-- Monospace font for code readability
